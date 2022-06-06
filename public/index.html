@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href=""
+      type=""
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>BudgetTrackmaster</title>
+  </head>
+
+  <body>
+
+     <!-- This is the total amount of money that the user has. -->
+      <div class="wrapper">
+      <div class="total">
+        <div class="total">Your Total: $<span id="total">0</span></div>
+      </div>
+
+      <!-- This is the form that the user will use to add or remove funds from their total. -->
+      <div class="form">
+        <input type="text" id="TransName" placeholder="Transaction Name" />
+        <input
+          type="number"
+          min="0"
+          id="TransAmount"
+          placeholder="Transaction amount"
+        />
+        <button id=""><i class=""></i> Add Funds</button>
+        <button id=""><i class=""></i> Remove Funds</button>
+        <p class="err"></p>
+      </div>
+
+      <!-- This is the table that will display the transactions that the user has made. -->
+      <div class="transactions">
+        <table>
+          <thead>
+            <th>Transaction</th>
+            <th>Amnt</th>
+          </thead>
+          <TransBody id="TransBody"> </TransBody>
+        </table>
+      </div>
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <!-- This is importing the chart.js library, the idb.js library, and the index.js file. -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- This is registering the service worker. -->
+    <script type="text/javascript">
+      (function () {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+            .register("./service-worker.js")
+            .then(() => console.log("Registered service worker!"))
+            .catch((error) =>
+              console.log("Unable to register service worker!", error)
+            );
+        }
+      })();
+    </script>
+  </body>
+</html>

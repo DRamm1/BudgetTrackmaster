@@ -1,0 +1,21 @@
+{
+    "name": "BudgetTrackmaster",
+    "short_name": "BTrack",
+    "icons": [
+        {
+            "src": "",
+            "sizes": "",
+            "type": ""
+        },
+        {
+            "src": "",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#0e6cb5",
+    "start_url": "../index.html",
+    "display": "standalone",
+    "description": "An application that helps you keep track of your budget."
+}
