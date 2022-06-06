@@ -1,6 +1,6 @@
 # BudgetTrackmaster
 
-Live URL: https://dramm1.github.io/
+Live URL: https://dramm1.github.io/BudgetTrackmaster/
 # Acceptance Criteria
 - GIVEN a budget tracker without an internet connection
 - WHEN the user inputs an expense or deposit
@@ -18,13 +18,13 @@ SO THAT my account balance is accurate when I am traveling
 
 
 # Screenshots and Images:
-- ![]()
+- ![](https://github.com/DRamm1/BudgetTrackmaster/blob/main/public/images/budgetimage.png)
 ------------------
  Additional Images and Information:
 
 - GitHub Link:
 
-- https://github.com/DRamm1/
+- https://github.com/DRamm1/BudgetTrackmaster
 
 - Framework:
-Javascript, node, npm, MySQL
+Javascript, node, npm, HTML
